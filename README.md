@@ -53,8 +53,8 @@ setserial -a /dev/ttyUSB0
 
 Check the **`Flags`** field in the output.
 
-* If **`low_latency`** is already present, no further action is required.
-* If **`low_latency`** is **not present**, proceed to the next step.
+* If **`low_latency`** is already **present**, no further action is required. Proceed to **Step 2**.
+* If **`low_latency`** is **not present**, , complete **Steps 1-3** through **1-6**, then proceed to **Step 2**
 
 ---
 
