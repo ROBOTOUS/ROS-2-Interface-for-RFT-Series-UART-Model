@@ -45,7 +45,7 @@ Determine which device corresponds to the sensor (for example: `/dev/ttyUSB0`).
 
 Check the current status of the identified serial device.
 
-> Replace `/dev/ttyUSB0` with the actual device name.
+> You must use the actual device name instead of /dev/ttyUSB0.
 
 ```bash
 setserial -a /dev/ttyUSB0
@@ -79,7 +79,7 @@ setserial -a /dev/ttyUSB0
 
 Apply the **`low_latency`** option to the serial device.
 
-> Replace `/dev/ttyUSB0` with the actual device name.
+> You must use the actual device name instead of /dev/ttyUSB0.
 
 ```bash
 sudo setserial /dev/ttyUSB0 low_latency
@@ -99,12 +99,12 @@ Confirm that **`low_latency`** appears in the **`Flags`** field.
 
 ---
 
-## Notes
+### 1-6. Notes
 
-* Enabling **`low_latency`** improves serial communication responsiveness.
-* Device names such as `ttyUSB*` or `ttyACM*` may vary depending on the system and USB chipset.
-* The configuration may be reset after a system reboot.
-* If communication issues occur again, reapply the above steps.
+Enabling **`low_latency`** improves serial communication responsiveness.
+Device names such as `ttyUSB*` or `ttyACM*` may vary depending on the system and USB chipset.
+The configuration may be reset after a system reboot.
+If communication issues occur again, reapply the above steps.
 
 
 ---
@@ -193,10 +193,10 @@ Launch the sensor node and begin publishing RFT sensor data to ROS 2 topics.
 ros2 launch rft_sensor_serial rft_sensor_launch.py
 ```
 
-## Notes
+### 2-8. Notes
 
-* To change the sensor USB port, edit the YAML file located in the config directory of the rft_sensor_serial package.
-* Update the port value to match the device path where the sensor is detected.
+To change the sensor USB port, edit the YAML file located in the config directory of the 'rft_sensor_serial' package.
+Update the port value to match the device path where the sensor is detected.
 
 ---
 
