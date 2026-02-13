@@ -118,15 +118,15 @@ If communication issues occur again, reapply the above steps.
 Create a directory that will contain your ROS 2 workspace.
 
 ```bash
-mkdir -p ~/ {your workspace}
-cd ~/ {your workspace}
+mkdir -p ~/ {your_workspace}
+cd ~/ {your_workspace}
 ```
 
 ---
 
 ### 2-2. Create the 'src' folder
 
-The 'src' folder is not generated automaticaly. You need to create it manually to store ROS 2 packages.
+The 'src' folder is not generated automatically. You need to create it manually to store ROS 2 packages.
 
 ```bash
 mkdir src
@@ -139,8 +139,8 @@ mkdir src
 Copy 'rft_sensor_serial.zip' into 'src' and extract it.
 
 ```bash
-cp ~/downloads/rft_sensor_serial.zip ~/{your workspace}/src/
-cd ~/{your workspace}/src
+cp ~/downloads/rft_sensor_serial.zip ~/{your_workspace}/src/
+cd ~/{your_workspace}/src
 unzip rft_sensor_serial.zip
 ```
 
@@ -151,7 +151,7 @@ unzip rft_sensor_serial.zip
 Build all packages in the 'src' folder using 'colcon'.
 
 ```bash
-cd ~/{your workspace}
+cd ~/{your_workspace}
 colcon build
 ```
 
